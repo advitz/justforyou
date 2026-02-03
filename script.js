@@ -4,14 +4,12 @@ const gifResult = document.querySelector(".gif-result");
 const heartLoader = document.querySelector(".cssload-main");
 const yesBtn = document.querySelector(".js-yes-btn");
 const noBtn = document.querySelector(".js-no-btn");
+const softMessage = document.querySelector(".soft-message");
 
-// Move the NO button randomly
-noBtn.addEventListener("mouseover", () => {
-  const newX = Math.floor(Math.random() * questionContainer.offsetWidth);
-  const newY = Math.floor(Math.random() * questionContainer.offsetHeight);
-
-  noBtn.style.left = `${newX}px`;
-  noBtn.style.top = `${newY}px`;
+// NO button disappears + sarcastic message appears
+noBtn.addEventListener("click", () => {
+  noBtn.style.display = "none";
+  softMessage.style.display = "block";
 });
 
 // YES button functionality
