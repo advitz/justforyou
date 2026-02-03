@@ -101,3 +101,13 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* Dark-humor message */
+.soft-message {
+  display: none;
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: #555;
+  text-align: center;
+  font-style: italic;
+}
